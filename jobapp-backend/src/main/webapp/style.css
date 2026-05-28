@@ -1,0 +1,509 @@
+/* =============================================
+   style.css — Telusko Job Portal
+   ============================================= */
+
+/* ── Navin's Original Styles (preserved) ── */
+
+body {
+  background-color: #f5f6fa;
+  color: #1a1a2e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.cdClass {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* =============================================
+   Home Page Styles
+   ============================================= */
+
+/* ── Navbar ── */
+.jp-navbar {
+  background-color: #1a1a2e;
+  padding: 14px 0;
+}
+
+.jp-brand {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.jp-brand:hover {
+  color: #ffffff;
+}
+
+.jp-nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  border-radius: 6px;
+  padding: 6px 14px !important;
+  font-size: 14px;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.jp-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+}
+
+/* ── Hero Section ── */
+.jp-hero {
+  text-align: center;
+  padding: 60px 16px 48px;
+}
+
+.jp-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.jp-hero-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.jp-hero-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 420px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* ── Cards Wrapper ── */
+.jp-cards-wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* ── Action Card ── */
+.jp-action-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px 24px;
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.jp-action-card:hover {
+  border-color: #a5b4fc;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.08);
+  text-decoration: none;
+}
+
+/* ── Card Icon ── */
+.jp-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.jp-icon-blue {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.jp-icon-green {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* ── Card Content ── */
+.jp-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.jp-card-desc {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* ── Card CTA ── */
+.jp-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 7px 16px;
+  background-color: transparent;
+  transition: background-color 0.15s;
+}
+
+.jp-action-card:hover .jp-card-cta {
+  background-color: #eef2ff;
+}
+
+/* ── Stats Row ── */
+.jp-stats-row {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 560px;
+  margin: 28px auto 0;
+}
+
+.jp-stat-item {
+  text-align: center;
+}
+
+.jp-stat-num {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.jp-stat-label {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.jp-stat-divider {
+  width: 1px;
+  height: 36px;
+  background-color: #e5e7eb;
+}
+
+/* =============================================
+   Add Job Page Styles
+   ============================================= */
+
+/* ── Page Section ── */
+.jp-form-section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 16px 60px;
+}
+
+/* ── Form Header ── */
+.jp-form-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.jp-form-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.jp-form-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ── Form Card ── */
+.jp-form-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 36px 32px;
+}
+
+/* ── Labels ── */
+.jp-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.jp-label-hint {
+  font-size: 11px;
+  font-weight: 400;
+  color: #9ca3af;
+  margin-left: 4px;
+}
+
+/* ── Inputs ── */
+.jp-input {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1a1a2e;
+  background-color: #fafafa;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.jp-input:focus {
+  border-color: #a5b4fc;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.08);
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* ── Tech Stack Select ── */
+.jp-select {
+  height: 160px;
+}
+
+.jp-select option {
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+/* ── Submit Button ── */
+.jp-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.jp-submit-btn:hover {
+  background-color: #4338ca;
+}
+
+/* ── Cancel Link ── */
+.jp-cancel-link {
+  font-size: 13px;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.jp-cancel-link:hover {
+  color: #1a1a2e;
+}
+
+/* =============================================
+   Job Detail Page Styles
+   ============================================= */
+
+/* ── Page Section ── */
+.jp-detail-section {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 16px 60px;
+}
+
+/* ── Detail Card ── */
+.jp-detail-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 36px 32px;
+}
+
+/* ── Experience Badge ── */
+.jp-detail-exp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #fef9c3;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+/* ── Detail Block ── */
+.jp-detail-block {
+  margin-bottom: 4px;
+}
+
+.jp-detail-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.jp-detail-value {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Divider ── */
+.jp-detail-divider {
+  border: none;
+  border-top: 1px solid #f3f4f6;
+  margin: 20px 0;
+}
+
+/* ── Tech Tags ── */
+.jp-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.jp-tech-tag {
+  background-color: #eef2ff;
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid #c7d2fe;
+}
+
+/* =============================================
+   View All Jobs Page Styles
+   ============================================= */
+
+/* ── Page Section ── */
+.jp-list-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 16px 60px;
+}
+
+/* ── Jobs Grid ── */
+.jp-jobs-grid {
+  margin-top: 8px;
+}
+
+/* ── Job Card ── */
+.jp-job-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 24px;
+  height: 100%;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.jp-job-card:hover {
+  border-color: #a5b4fc;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.08);
+}
+
+/* ── Card Header ── */
+.jp-job-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+/* ── Job Title ── */
+.jp-job-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+/* ── Description ── */
+.jp-job-desc-block {
+  margin-bottom: 16px;
+}
+
+.jp-job-desc {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Active nav link ── */
+.jp-nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+}
+
+.jp-job-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.jp-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 6px 14px;
+  background-color: #fef2f2;
+  text-decoration: none;
+  transition:
+    background-color 0.15s,
+    border-color 0.15s;
+}
+
+.jp-delete-btn:hover {
+  background-color: #fee2e2;
+  border-color: #f87171;
+  color: #dc2626;
+  text-decoration: none;
+}

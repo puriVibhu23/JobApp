@@ -1,0 +1,17 @@
+cat <<EOT > .gitignore
+# Frontend dependencies & build outputs
+**/node_modules/
+**/build/
+**/.env.local
+**/.DS_Store
+
+# Backend targets & configuration outputs
+**/target/
+**/.idea/
+**/.gradle/
+**.iml
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+EOT
+
