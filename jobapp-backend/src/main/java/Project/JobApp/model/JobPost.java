@@ -1,8 +1,5 @@
 package Project.JobApp.model;
 
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
-
 import java.util.List;
 import org.springframework.stereotype.Component;
 import jakarta.persistence.ElementCollection;
@@ -38,6 +35,5 @@ public class JobPost {
 
     @NotEmpty(message = "Tech stack cannot be empty")
     @ElementCollection
-    @OnDelete(action = OnDeleteAction.CASCADE)
     private List<String> postTechStack;
 }
